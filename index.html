@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>
+    Hello, World!
+  </h1>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universo Gamer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #282c34;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #61dafb;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #282c34;
+            color: white;
+        }
+        #search {
+            margin-bottom: 20px;
+        }
+    </style>
+    <script>
+        function searchGames() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const games = document.querySelectorAll('.game');
+            games.forEach(game => {
+                const title = game.querySelector('h3').textContent.toLowerCase();
+                game.style.display = title.includes(input) ? '' : 'none';
+            });
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <h1>Bienvenido a Universo Gamer</h1>
+    <nav>
+        <a href="#juegos">Juegos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section id="juegos">
+    <h2>Información de Juegos</h2>
+
+    <div id="search">
+        <input type="text" id="searchInput" onkeyup="searchGames()" placeholder="Buscar juegos...">
+    </div>
+    
+    <div class="game">
+        <h3>NBA 2K24</h3>
+        <p>Peso: 85 GB</p>
+        <p><a href="https://store.steampowered.com/app/1811260/NBA_2K24/">Ver en Steam</a></p>
+        <p>NBA 2K24 ofrece una experiencia inmersiva en el mundo del baloncesto profesional, con gráficos impresionantes y jugabilidad realista.</p>
+        <ul>
+            <li><strong>Modo MyCareer:</strong> Crea y desarrolla tu propio jugador, enfrentándote a desafíos en la NBA, incluyendo decisiones críticas que afectan tu carrera y relaciones.</li>
+            <li><strong>Personajes:</strong> Interactúa con leyendas del baloncesto como Michael Jordan y Kobe Bryant, quienes ofrecen mentoría y desafíos únicos en el modo MyCareer.</li>
+            <li><strong>Mejoras en el juego:</strong> Gráficos y físicas mejoradas que brindan una experiencia más auténtica y envolvente en cada partido.</li>
+            <li><strong>Multijugador en línea:</strong> Compite en ligas y torneos, participa en eventos de temporada y mejora tus habilidades con amigos.</li>
+            <li><strong>Comentarios y análisis:</strong> Comentarios dinámicos y análisis de jugadas en tiempo real, enriqueciendo la experiencia de juego.</li>
+        </ul>
+    </div>
+    
+    <div class="game">
+        <h3>NBA 2K25</h3>
+        <p>Peso: 90 GB (estimado)</p>
+        <p><a href="https://store.steampowered.com/app/1972790/NBA_2K25/">Ver en Steam</a></p>
+        <p>NBA 2K25 lleva la serie a nuevas alturas, con un enfoque renovado en la autenticidad y el realismo en cada aspecto del juego.</p>
+        <ul>
+            <li><strong>Modo MyCareer:</strong> Desarrolla tu jugador desde sus inicios en la liga de verano hasta convertirte en una superestrella, con historias interactivas y decisiones que influyen en el desarrollo de tu carrera.</li>
+            <li><strong>Personajes:</strong> Encuentra a entrenadores como Phil Jackson y agentes que influencian tu camino, así como jugadores actuales y leyendas que ofrecen desafíos y aprendizajes.</li>
+            <li><strong>Gráficos realistas:</strong> Cada partido ofrece una atmósfera auténtica, con animaciones detalladas y físicas de baloncesto que reflejan el juego real.</li>
+            <li><strong>Partidos en línea:</strong> Compite contra jugadores de todo el mundo, accediendo a eventos únicos y ligas competitivas.</li>
+        </ul>
+    </div>
+    
+    <div class="game">
+        <h3>Red Dead Redemption II</h3>
+        <p>Peso: 150 GB</p>
+        <p><a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/">Ver en Steam</a></p>
+        <p>Red Dead Redemption II es una obra maestra de acción y aventura que se desarrolla en un mundo abierto, donde los jugadores viven la vida de Arthur Morgan, un forajido en el ocaso del salvaje oeste.</p>
+        <ul>
+            <li><strong>Personajes:</strong> Además de Arthur, interactúas con otros miembros de la banda Van der Linde, como Dutch Van der Linde, el carismático líder; John Marston, quien se convierte en un personaje central, y Sadie Adler, una mujer fuerte y decidida con su propia historia de redención.</li>
+            <li><strong>Historia profunda:</strong> La narrativa aborda temas de lealtad, moralidad y el choque entre la civilización y el salvajismo, mientras los personajes luchan por sobrevivir en un mundo que cambia rápidamente.</li>
+            <li><strong>Modo multijugador:</strong> Red Dead Online permite a los jugadores unirse a otros en misiones cooperativas, competiciones y eventos en un mundo compartido lleno de actividades.</li>
+            <li><strong>Actividades secundarias:</strong> Desde cacerías hasta juegos de cartas, el juego ofrece un amplio rango de actividades que enriquecen la experiencia general.</li>
+        </ul>
+    </div>
+    
+    <div class="game">
+        <h3>Call of Duty: Warzone</h3>
+        <p>Peso: 175 GB</p>
+        <p><a href="https://store.steampowered.com/app/960090/Call_of_Duty_Warzone/">Ver en Steam</a></p>
+        <p>Call of Duty: Warzone es un juego de batalla real que combina la jugabilidad intensa de la franquicia con un extenso mapa y la posibilidad de competir contra 150 jugadores.</p>
+        <ul>
+            <li><strong>Personajes:</strong> Juega como diversos operadores, cada uno con habilidades y apariencias únicas que pueden influir en el estilo de juego y estrategia en el campo de batalla.</li>
+            <li><strong>Modo de batalla real:</strong> Participa en partidas en las que deberás usar la estrategia, el sigilo y el trabajo en equipo para sobrevivir mientras el mapa se reduce de tamaño.</li>
+            <li><strong>Equipos de escuadrón:</strong> Forma un equipo con amigos o utiliza la opción de emparejamiento para crear una estrategia conjunta y maximizar tus posibilidades de ganar.</li>
+            <li><strong>Eventos temporales:</strong> Disfruta de eventos de tiempo limitado y actualizaciones que introducen nuevos modos de juego y desafíos.</li>
+        </ul>
+    </div>
+    
+    <div class="game">
+        <h3>Grand Theft Auto V (GTA V)</h3>
+        <p>Peso: 95 GB</p>
+        <p><a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/">Ver en Steam</a></p>
+        <p>GTA V es un juego de acción y aventura que presenta un mundo abierto inmenso, donde los jugadores controlan a tres criminales en la ficticia ciudad de Los Santos.</p>
+        <ul>
+            <li><strong>Personajes:</strong> Juega como Michael De Santa, un ladrón de bancos retirado; Franklin Clinton, un joven que busca salir de su vida criminal; y Trevor Philips, un psicópata impredecible. Cada uno tiene su propia narrativa, habilidades especiales y misiones exclusivas.</li>
+            <li><strong>Historia entrelazada:</strong> Las historias de los tres protagonistas se cruzan a medida que llevan a cabo una serie de robos y enfrentan desafíos personales y externos.</li>
+            <li><strong>Modo en línea:</strong> GTA Online ofrece un mundo compartido donde los jugadores pueden participar en misiones, carreras y competiciones, así como personalizar sus personajes y vehículos.</li>
+            <li><strong>Actividades secundarias:</strong> Desde deportes hasta juegos
+              <div class="game">
+    <h3>Fortnite</h3>
+    <img src="img/fortnite.jpg" alt="Fortnite" style="width:100%; max-width:300px;">
+    <p>Peso: 90 GB</p>
+    <p><a href="https://www.epicgames.com/fortnite/">Ver en Epic Games</a></p>
+    <p>Fortnite es un juego multijugador en línea que combina la construcción con la acción en intensas batallas reales. Desarrollado por Epic Games, el juego ha capturado la atención de millones de jugadores alrededor del mundo con su estilo único, eventos en vivo y actualizaciones frecuentes.</p>
+    
+    <h4>Modos de Juego</h4>
+    <ul>
+        <li><strong>Battle Royale:</strong> Hasta 100 jugadores se lanzan a una isla y luchan por ser el último en pie, mientras construyen estructuras y recolectan recursos para sobrevivir.</li>
+        <li><strong>Modo Creativo:</strong> Los jugadores tienen la libertad de crear sus propios mapas, minijuegos y experiencias personalizadas utilizando herramientas de construcción avanzadas.</li>
+        <li><strong>Salva el Mundo:</strong> Un modo cooperativo en el que los jugadores enfrentan oleadas de enemigos mientras construyen fortificaciones y buscan recursos para defenderse.</li>
+    </ul>
+    
+    <h4>Personajes y Skins</h4>
+    <ul>
+        <li><strong>Skins personalizables:</strong> Los jugadores pueden adquirir y personalizar sus personajes con una amplia variedad de "skins" o apariencias. Algunas de las más populares incluyen colaboraciones con marcas y franquicias famosas como Marvel, DC, Star Wars, y celebridades como Travis Scott y Ariana Grande.</li>
+        <li><strong>Colaboraciones:</strong> Fortnite es famoso por sus colaboraciones con la cultura pop, lanzando skins de superhéroes, personajes de videojuegos, actores y músicos.</li>
+        <li><strong>Pase de batalla:</strong> Los jugadores pueden comprar el Pase de Batalla cada temporada, que ofrece recompensas exclusivas como skins, gestos y otros objetos cosméticos a medida que suben de nivel.</li>
+    </ul>
+    
+    <h4>Eventos en Vivo</h4>
+    <ul>
+        <li><strong>Conciertos virtuales:</strong> Fortnite ha revolucionado el mundo del entretenimiento con eventos musicales dentro del juego, incluyendo actuaciones de artistas como Travis Scott, Marshmello, y Ariana Grande, vistas por millones de personas.</li>
+        <li><strong>Eventos de historia:</strong> A lo largo de las temporadas, Fortnite ha presentado eventos de historia épicos que cambian drásticamente el mapa y la narrativa del juego, como "El Agujero Negro" que llevó a la transición al Capítulo 2.</li>
+        <li><strong>Eventos de temporada:</strong> Cada temporada trae consigo nuevos eventos, desafíos y cambios al mapa, manteniendo el juego siempre fresco y dinámico.</li>
+    </ul>
+    
+    <h4>Actualizaciones Constantes</h4>
+    <ul>
+        <li>Epic Games lanza actualizaciones frecuentes que incluyen nuevos modos de juego, armas, cambios en el mapa y mecánicas de juego que mantienen a la comunidad interesada.</li>
+        <li>Fortnite cuenta con eventos temáticos de temporadas como Halloween (Fortnitemares), Invierno y verano, introduciendo modos de juego únicos y skins exclusivas.</li>
+    </ul>
+    
+    <h4>Características Adicionales</h4>
+    <ul>
+        <li><strong>Construcción:</strong> La capacidad de construir estructuras defensivas o rampas para obtener ventajas tácticas es una de las mecánicas más distintivas de Fortnite. Los jugadores deben recolectar materiales como madera, piedra y metal para construir en tiempo real durante las partidas.</li>
+        <li><strong>Multijugador:</strong> Puedes jugar solo, en dúo o en escuadrón con amigos, con un enfoque en el trabajo en equipo y la estrategia en las partidas.</li>
+        <li><strong>Competitivo:</strong> Fortnite tiene un circuito competitivo robusto con torneos globales, incluyendo la famosa Copa del Mundo de Fortnite que premia a los jugadores con grandes sumas de dinero.</li>
+    </ul>
+</div>
